@@ -1,8 +1,12 @@
-console.log("Hello aubin ");
+// LES VARIABLES
 
-var a;
+var prenom = "John";
 
-a = 10;
-b = a + 10;
+let prenom2 = "Marie";
 
-console.log(b);
+const prenom3 = "Aubin";
+
+prenom = "Lucie";
+prenom2 = "Damso";
+
+console.log(prenom, prenom2, prenom3);
