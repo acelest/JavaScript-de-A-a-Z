@@ -18,3 +18,15 @@ console.log(mul);
 let sous = nb1 - nb2;
 
 console.log(sous);
+
+//division
+
+let div = nb1 / nb2;
+
+console.log(div);
+
+//modulo = le reste d'une division
+
+let modulo = nb1 % nb2;
+
+console.log(modulo);
