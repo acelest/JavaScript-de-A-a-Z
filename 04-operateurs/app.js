@@ -12,3 +12,9 @@ console.log(nb3);
 let mul = nb1 * nb2;
 
 console.log(mul);
+
+//soustraction
+
+let sous = nb1 - nb2;
+
+console.log(sous);
