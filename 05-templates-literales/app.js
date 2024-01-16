@@ -1,8 +1,11 @@
-const prenom = "Jonathan";
-const age = 30;
+const prenom = "Aubin";
+const age = 19;
 const job = "developpeur";
 
-// const personage = "Je suis " + prenom + "et j'ai " + age + "je suis " + job;
-const personage = `je suis ${prenom}, j'ai ${age} et je suis ${job}`;
+//novice
+const personnage = "Je suis " + prenom + "et j'ai " + age + "je suis " + job;
 
-console.log(personage);
+//senior
+const personnage1 = `je suis ${prenom}, j'ai ${age} et je suis ${job}`;
+
+console.log(personnage);
