@@ -1,11 +1,7 @@
-const prenom = "Aubin";
-const age = 19;
-const job = "developpeur";
+// selection d'un elemnt html
+const titre = document.querySelector("h1");
 
-//novice
-const personnage = "Je suis " + prenom + "et j'ai " + age + "je suis " + job;
+// selection du classe
+const classe = document.querySelector(".text");
 
-//senior
-const personnage1 = `je suis ${prenom}, j'ai ${age} et je suis ${job}`;
-
-console.log(personnage);
+console.log(titre, classe);
