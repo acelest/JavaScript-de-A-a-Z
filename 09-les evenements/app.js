@@ -1,14 +1,14 @@
-const box = document.querySelector('.box');
+const box = document.querySelector(".box");
 
+box.addEventListener("click", () => {
+  box.classList.add("active");
+});
 
-document.addEventListener('mouseleave', ()=> {
-  box.classList.add('active')
-})
-
-// click = qaund je clique 
-// dblclick = quand je clique deux fois rapidement
-// load 
-// keydown ou keypress
-// mouseout, mouseenter, mouseover, mouseleave
-
- 
+// click = quand je clique
+// dbclick = le double clique
+// load = fin du chargement de la page
+// keydown
+// keypress
+// keyup
+// mousecenter
+// mouseover
