@@ -5,7 +5,7 @@ const p = document.querySelector("p");
 const liste = document.querySelector("ul");
 const img = document.querySelector("img");
 const form = document.querySelector("form");
-const input = document.querySelector("#test");
+const input = document.querySelector("#text");
 const button = document.querySelector("button");
 
 // innerText = permet de add du texte ;
@@ -14,15 +14,14 @@ title1.innerHTML = `je suis du texte ajoute`;
 // textContent = pour ajouter du texte
 title2.textContent = `je suis aubin`;
 
-// NB : POURQUOI UTILISER `` (CAR ON PEUT FAIRE REFERENCE A DES VARIABLES..)
-
 // innerHTML = pour ajouter du code HTML
 // box.innerHTML = `<p>Hello les devs</p>`;
+
+//--------- NB : POURQUOI UTILISER `` (CAR ON PEUT FAIRE REFERENCE A DES VARIABLES..)---------
 
 // creer des elements html
 
 let newLI = document.createElement("li");
-
 newLI.innerText = `Nouvelle liste`;
 liste.appendChild(newLI);
 
@@ -35,6 +34,24 @@ button.addEventListener("click", () => {
 });
 
 // replaceWith = pour choisir l'odre de mon element
+liste.children[1].replaceWith(newLI);
 
-let child = liste.children[0];
-console.log(child);
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let val = input.value; // This line might be causing the error
+  console.log(val);
+
+  title1.innerText = `${val}`;
+});
+
+// recuperer les coordonnees de la souris
+
+const cor = document.querySelector(".cor");
+
+let x = 0;
+let y = 0;
+
+window.addEventListener("mousemouve", (even) => {
+  x = even.clientX;
+  y = even.clientY;
+});
