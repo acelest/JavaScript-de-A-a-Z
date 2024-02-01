@@ -47,11 +47,14 @@ form.addEventListener("submit", (e) => {
 // recuperer les coordonnees de la souris
 
 const cor = document.querySelector(".cor");
+console.log(cor);
 
 let x = 0;
 let y = 0;
 
-window.addEventListener("mousemouve", (even) => {
+window.addEventListener("mousemove", (even) => {
   x = even.clientX;
   y = even.clientY;
+
+  cor.textContent = `x : ${x} Y: ${y} `;
 });
