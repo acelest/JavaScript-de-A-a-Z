@@ -13,7 +13,7 @@ tab.shift(2)
 
 // unshift = ajoute une valeur au debut du tab
 tab.unshift(0)
-
+ 
 
 console.log(tab);
 
